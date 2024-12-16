@@ -1,0 +1,71 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #e3f2fd; /* Light blue background */
+}
+
+/* General Container Styles */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #e0f7fa; /* Slightly lighter blue for the container */
+    border-radius: 10px; /* Adds rounded corners for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+}
+
+/* Individual Content Blocks */
+.content-block {
+    margin-bottom: 40px; /* Adds spacing between each block */
+    padding: 20px;
+    border: 1px solid #0097a7; /* Light border for separation */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #ffffff; /* White background for each block */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+/* Navigation Bar */
+.nav {
+    display: flex;
+    justify-content: center; /* Center-aligns navigation items */
+    list-style: none;
+    background-color: #00796b; /* Dark teal background for the nav bar */
+    padding: 10px 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #ffffff; /* White text for nav links */
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #80cbc4; /* Light teal on hover */
+}
+
+/* Styling for the Image */
+.image {
+    display: block;
+    margin: 0 auto; /* Centers the image */
+    max-width: 100%; /* Ensures responsiveness */
+}
+
+/* Responsive Media Query */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Reduces container width on smaller screens */
+    }
+    .content-block {
+        padding: 15px;
+    }
+    .nav {
+        flex-direction: column; /* Stacks navigation items vertically */
+    }
+}
